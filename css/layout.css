@@ -194,6 +194,9 @@
     left: unset;
     right: 0;
   }
+  .movie__text {
+    font-size: 16px;
+  }
 
 }/*  max-width 1200px */
 
@@ -237,6 +240,48 @@
     max-width: calc(100% / 5 - 14px);
   }
 
+  .movie__box {
+    padding: 0px 0 30px;
+  }
+  .description__box {
+    order: 2;
+    margin-bottom: 0px;
+  }
+  .movie__img {
+    display: none;
+  }
+
+  .description {
+    flex-wrap: wrap;
+    flex-direction: unset;
+    color: white;
+  }
+  .movie__title {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 15px;
+  }
+  .view__2 {
+    order: 2;
+    position: absolute;
+    top: 8px;
+    right: 0;
+  }
+  .movie__year {
+    order: 3;
+    width: 100%;
+    text-align: center;
+  }
+  .rating__2 {
+    order: 4;
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .movie__text {
+    order: 5;
+  }
 
 }/*  max-width 1070px */
 
@@ -294,6 +339,71 @@
     line-height: 25px;
   }
 
+  .video__container {
+    margin: 0 -16px;
+    width: calc(100% + 32px);
+  }
+  .video__header {
+    display: none;
+  }
+  .movie__year {
+    font-size: 14px;
+    color: #C1C1C1;
+  }
+  .view__2 {
+    top: 0px;
+    right: -16px;
+    font-size: 12px;
+    font-weight: 400;
+    height: 15px;
+    line-height: 15px;
+    width: 60px;
+    border-radius: 0px;
+    margin: 0px 0;
+  }
+  .view__2 i {
+    margin-right: 4px;
+  }
+  .y18:after {
+    top: 2px;
+    font-size: 12px;
+  }
+  .movie__text {
+    font-size: 14px;
+  }
+  .com__title {
+    margin-bottom: 20px;
+  }
+  .com__img {
+    margin-right: 10px;
+    flex: 0 0 40px;
+  }
+  .com__name {
+    font-size: 12px;
+  }
+  .com__text {
+    font-size: 11px;
+    margin: 5px 0 5px;
+  }
+  .com__answer {
+    font-size: 11px;
+  }
+  .com__form input {
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    padding: 0 7px;
+  }
+  .com__form textarea {
+    margin: 8px 0 8px;
+    font-size: 14px;
+    padding: 3px 7px;
+  }
+  .com__form button {
+    font-size: 14px;
+    padding: 7px 14px;
+    margin-bottom: 30px;
+  }
 }/*  max-width 850px */
 
 @media (max-width: 681px) {
@@ -301,6 +411,7 @@
     flex: calc(100% / 3 - 14px);
     max-width: calc(100% / 3 - 14px);
   }
+
 }
 
 @media (max-width: 460px) {
@@ -318,4 +429,9 @@
   .footer__logo {
     margin: 0 28px 10px 0;
   }
+  .movie__title,
+  .movie__year {
+    text-align: left;
+  }
+
 }/*  max-width 450px */
