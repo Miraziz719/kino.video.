@@ -12,5 +12,12 @@
   font-weight: medium;
   font-style: normal;
 }
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("fonts/Roboto-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
   
   

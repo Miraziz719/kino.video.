@@ -127,3 +127,27 @@ $('.slick__3').slick({
     }
   }]
 });
+
+
+// 100% height wrapper
+var minY = $( window ).height() - $('footer').height()
+$('.wrapper').css('min-height', minY)
+$( window ).resize(function() {
+  var minY = $( window ).height() - $('footer').height()
+  $('.wrapper').css('min-height', minY)
+});
+
+
+// image hover gif play
+$('.poster__4').mouseover(function() {
+  var elem = $(this).find("span.trigger");
+  $(this).find("img.replacement").hide();
+  var src = elem.attr('data-original');
+  elem.replaceWith('<img class="trigger" src="' + src + '" style="display:block;"/>');
+});
+$('.poster__4').mouseout(function() {
+  var elem = $(this).find("img.trigger");
+  $(this).find("img.replacement").show();
+  var src = elem.attr('src');
+  elem.replaceWith('<span class="trigger" data-original="'+src+'"></span>');
+});
